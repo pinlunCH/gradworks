@@ -3,7 +3,8 @@ Class DB{
     
     public function connect()
     {
-       $con = mysqli_connect('localhost', 'root', 'root', 'vanarts');
+       //$con = mysqli_connect('localhost', 'root', 'root', 'vanarts');
+       $con = mysqli_connect('localhost', 'root', '', 'vanarts');
 
         return $con;
     }
