@@ -8,7 +8,6 @@ Class DB{
         return $con;
     }
 
-
     public static function fetch($sql)
     {
         $oDB = new DB();
