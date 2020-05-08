@@ -37,7 +37,11 @@ $(function(){
     }
     fetchData("getData.php", function(data){
         $.each(data, function(){
-            $(".allworks").append('<div class="work"><img src="imgs/'+this.coverimg+'"></div>');
+            $(".allworks").append('<div class="work" data-id="'++'"><img src="imgs/'+this.coverimg+'"></div>');
+        })
+        $(".work").click(function(click){
+            var workID = $(".work").data("id");
+            
         })
     });
 });
