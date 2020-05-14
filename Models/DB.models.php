@@ -4,7 +4,6 @@ Class DB{
     public function connect()
     {
        $con = mysqli_connect('localhost', 'root', 'root', 'vanarts');
-
         return $con;
     }
 
@@ -12,13 +11,11 @@ Class DB{
     {
         $oDB = new DB();
         $con = $oDB->connect();
-
         $results = mysqli_query($con, $sql);
         while($row = mysqli_fetch_assoc($results))
         {
             $data[] = $row;
         }
-
         return $data;
     }
 }

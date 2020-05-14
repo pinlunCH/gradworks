@@ -1,0 +1,219 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+}
+
+.main {
+	background-image: url(../imgs/header.jpg);
+	height: 450px;
+	max-width: 100%;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+}
+
+.logo {
+	 position: absolute;
+}
+
+.logo img {
+	width: 85%;
+	padding-left: 5%;
+}
+
+.header {
+	display: inline-block;
+	height: 100%;
+	float: right;
+	width: 75%;
+	background: rgb(124,124,124);
+	background: linear-gradient(90deg, rgba(124,124,124,0) 29%, rgba(73,73,73,0.5051062661392682) 59%, rgba(22,22,22,1) 100%);
+	padding-right: 5%;
+}
+
+.red {
+	color: #cc0901;
+}
+
+.title h1 {
+	text-align: right;
+	font-size: 70px;
+	font-weight: bolder;
+	padding-top: 23%;
+}
+
+.subContent {
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 52%, rgba(46,45,45,1) 100%);
+	display: inline-block;
+	padding-top: 3%;
+	height: 250px;
+}
+
+.content {
+	float: left;
+	padding-left: 5%;
+	padding-top: 4%;
+	position: absolute;
+}
+
+.content h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+hr {
+	width: 65%;
+	border: .5px solid #707070;
+}
+
+.btn-danger {
+	font-size: 20px;
+	font-weight: bold;
+	width: 140px;
+	background-color: #cc0901;
+}
+
+.content i {
+	padding-left: 10px;
+}
+
+.poster {
+	float: right;
+	margin-right: 3%;
+	text-align: right;
+}
+
+.poster img {
+	margin-left: 20px;
+}
+
+.poster i {
+	margin-left: 15px;
+	color: #fff;
+}
+
+/*---------------------ALL DEPARTMENTS PAGE--------------------------*/
+
+.allDept {
+	background-image: url(../imgs/dept.png);
+	height: 100%;
+	max-width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.heading1 h1 {
+	padding-top: 5%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.arrowLeft {
+	float: left;
+	padding-top: 25%;
+	margin-left: 5%;
+}
+
+.arrowLeft i {
+	color: #707070;
+}
+
+.arrowRight {
+	float: right;
+	padding-top: 25%;
+	margin-right: 5%;
+}
+
+.arrowRight i {
+	color: #707070;
+}
+
+.departments {
+	display: inline-block;
+	text-align: center;
+}
+
+.deptImages img {
+	margin: 25px;
+}
+
+.btn-secondary {
+	text-transform: uppercase;
+	margin-left: 5%;
+}
+/*---------------------2D 3D PAGE--------------------------*/
+.animation {
+	margin-top: 15%;
+	margin-right: 55%;
+	float: left;
+	margin-left: 12%;
+	position: absolute;
+	display: inline-block;
+}
+
+.animation p {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.animation h1 {
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.animationDept {
+	text-align: right;
+	margin-right: 8%;
+	padding-top: 5%;
+}
+
+.animationDept i {
+	color: #707070;
+}
+
+.animationDept img {
+	margin: 5px;
+}
+
+.animationArrowLeft {
+	padding-top: 25%;
+	margin-left: 5%;
+	position: absolute;
+}
+
+.animationArrowLeft i {
+	color: #707070;
+}
+
+.animationArrowRight {
+	float: right;
+	padding-top: 25%;
+}
+
+.animationArrowRight i {
+	color: #707070;
+}
+
+.animationDeptImages img {
+	margin-right: 3%;
+}
+
+/*---------------------FOOTER--------------------------*/
+.foot {
+	padding-top: 3%;
+   	left: 0;
+   	bottom: 0;
+   	width: 100%;
+   	color: #707070;
+   	text-align: center;
+}
