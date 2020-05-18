@@ -31,15 +31,8 @@ body {
 }
 
 .logo img {
-	width: 15%;
+	width: 85%;
 	padding-left: 5%;
-}
-@media only screen and (max-width: 600px) {
-  .logo img {
-   width: 20%;
-
- 
-  }
 }
 
 .header {
@@ -145,14 +138,9 @@ hr {
 }
 
 .heading1 h1 {
-	padding-top: 7%;
+	padding-top: 5%;
 	text-align: center;
 	font-weight: bold;
-}
-@media only screen and (max-width: 600px) {
- .heading1 h1 {
- padding-top: 12%;
-  }
 }
 
 .arrowLeft {
@@ -161,11 +149,6 @@ hr {
 	margin-left: 5%;
 }
 
-@media only screen and (max-width: 600px) {
- .arrowLeft  {
- padding-top: 70%;
-  }
-}
 .arrowLeft i {
 	color: #707070;
 }
@@ -175,17 +158,10 @@ hr {
 	padding-top: 25%;
 	margin-right: 5%;
 }
-@media only screen and (max-width: 600px) {
- .arrowRight  {
- padding-top: 70%;
-  }
-}
-
 
 .arrowRight i {
 	color: #707070;
 }
-
 
 .departments {
 	display: inline-block;
@@ -193,15 +169,7 @@ hr {
 }
 
 .deptImages img {
-	padding: 25px;
-	width: 15%;
-}
-@media only screen and (max-width: 600px) {
-  .deptImages img {
-   width: 25%;
-   padding: 10px;
-
-  }
+	margin: 25px;
 }
 
 .btn-secondary {
@@ -274,160 +242,4 @@ hr {
    	width: 100%;
    	color: #707070;
    	text-align: center;
-}
-/* NAV CSS */
-.burger {
-  width: 70px;
-  height: 70px;
-  position: fixed;
-  top: 0;
-  right: 50px;
-  border-radius: 6px;
-  z-index: 10;
-  color: white;
-}
-.burger span {
-  position: relative;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  user-select: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform-origin: 4px 0px;
-}
-
-.burger span,
-.burger span::before,
-.burger span::after {
-  display: block;
-  width: 40px;
-  height: 5px;
-  background-color: #cc0801;
-  outline: 1px solid transparent;
-  border-radius: 8px;
-}
-
-.burger span::before,
-.burger span::after {
-  position: absolute;
-  content: "";
-}
-
-.burger span::before {
-  top: -9px;
-}
-
-.burger span::after {
-  top: 9px;
-}
-
-.burger.clicked span {
-  background-color: transparent;
-}
-
-.burger.clicked span::before {
-  transform: translateY(9px) rotate(45deg);
-}
-
-.burger.clicked span::after {
-
-  transform: translateY(-9px) rotate(-45deg);
-}
-
-.burger.clicked span:before,
-.burger.clicked span:after {
-  background-color: #cc0801;
-}
-
-.burger:hover {
-  cursor: pointer;
-}
-
-
-nav {
-  background-color: rgba(34, 34, 34, 0.9);
-  position: fixed;
-  z-index: 9;
-  top: 0;
-  right: 0;
-  height: 100%;
-  max-width: 820px;
-  width: 50%;
-  padding: 100px 40px 60px 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-y: auto;
-  transform: translateX(100%);
-  transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-
-nav.show {
-  transform: translateX(0px);
-}
-
-nav.show ul.main1 li {
-  transform: translateX(0px);
-  opacity: 1;
-  text-align: center;
-}
-
-nav.show ul.main1 li:nth-child(1) {
-  transition-delay: 0.15s;
-}
-
-nav.show ul.main1 li:nth-child(2) {
-  transition-delay: 0.3s;
-}
-
-nav.show ul.main1 li:nth-child(3) {
-  transition-delay: 0.45s;
-}
-
-nav.show ul.main1 li:nth-child(4) {
-  transition-delay: 0.6s;
-}
-
-nav.show ul.main1 li:nth-child(5) {
-  transition-delay: 0.75s;
-}
-
-nav.show ul.main1 li:nth-child(6) {
-  transition-delay: 0.9s;
-}
-
-nav.show ul.main1 li:nth-child(7) {
-  transition-delay: 1.05s;
-}
-
-nav.show ul.main1 li:nth-child(8) {
-  transition-delay: 1.2s;
-}
-nav.show {padding: 120px 90px 70px 90px;}
-
-a.hEffect:after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 3px;
-  background: #cc0801;
-  transition: width .3s;
-}
-
-a.hEffect:hover:after {
-  width: 100%;
-  transition: width .3s;
-}
-nav ul.main1 li a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  display: block;
-  letter-spacing: 5px;
-  font-weight: 600;
-  text-align: center;
-  padding: 10px 0;
-  transition: all 0.3s ease;
 }
