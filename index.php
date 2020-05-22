@@ -70,7 +70,7 @@
 			</div>
 		</div>
 
-		<div class="bgModal" id="modal1">
+		<div class="bgModal" id="modal14">
           <div class="modal-content">
           	<img src="imgs/closebutton.png" alt="delete button" class="close" id="closeModal">
           	<div class="spaceContent">   

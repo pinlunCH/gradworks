@@ -19,10 +19,15 @@
 					<a href="https://www.vanarts.com/" target="_blank"><img src="imgs/logo.png" alt="VanArts Logo" style="width: 15%;"></a><!--Using jpg img for now (need png graphics from Ashwin/Steph)-->
 				</div><!----logo end---->
 
-				<div class="menu">
-					<!--Hamburger Menu-->
-				</div><!----menu end---->
-			</div><!----mainNav end---->
+				<nav>
+					<ul class="main1">
+
+					</ul>
+        		</nav>
+				<div class="burger">
+				<span></span>
+				</div>
+			</div>
 
 			<div class="ani">
 				<div class="animation">
@@ -32,23 +37,20 @@
 
 				<div class="animationDept">
 					<div class="animationArrowLeft">
-						<a href="photography.html"><i class="fas fa-chevron-circle-left fa-3x"></i></i></a>
+						<a href="#" id="prevPageDept"><i class="fas fa-chevron-circle-left fa-3x"></i></i></a>
 					</div>
 
 					<div class="animationArrowRight">
-						<a href="radio.html"><i class="fas fa-chevron-circle-right fa-3x"></i></i></a>
+						<a href="#" id="nextPageDept"><i class="fas fa-chevron-circle-right fa-3x"></i></i></a>
 					</div>
 
 					<div class="animationDeptImages">		
-						<img src="imgs/poster1.jpg" style="width:16%" alt="...">
-						<img src="imgs/poster2.jpg" style="width:16%" alt="..."><br>
-						<img src="imgs/poster3.jpg" style="width:16%" alt="...">
-						<img src="imgs/poster4.jpg" style="width:16%" alt="...">	
+
 					</div>
 				</div>
 			</div><br>
 
-			<a href="index.html"><button type="button" class="btn btn-secondary"><i class="fas fa-chevron-left"></i> &nbsp; Home</button></a>
+			<a href="index.php"><button type="button" class="btn btn-secondary"><i class="fas fa-chevron-left"></i> &nbsp; Home</button></a>
 		</div>
 
 		<div class="foot">
@@ -58,8 +60,10 @@
 	</div><!----wrapper end---->
 
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="libs/functions.js" type="text/javascript"></script>
+<script src="libs/ham.js"></script>
 </body>
 </html>
