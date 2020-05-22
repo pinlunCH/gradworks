@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: May 14, 2020 at 07:54 AM
+-- Generation Time: May 22, 2020 at 03:43 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.8
 
@@ -153,7 +153,8 @@ INSERT INTO `works` (`id`, `strName`, `strCoverImage`, `nStudentsId`, `strDetail
 (10, 'the grand budapest hotel', 'budapesthotel.jpg', 6, 'somthings', 1),
 (11, 'Isle of Dogs', 'dogs.jpg', 6, 'somthings', 1),
 (12, 'Alita', '068910016849516.jpg', 7, 'some', 4),
-(13, 'Guardians of the Galaxy', 'MOVAB77045__90041.1542107226.jpg', 6, 'dom', 4);
+(13, 'Guardians of the Galaxy', 'MOVAB77045__90041.1542107226.jpg', 6, 'dom', 4),
+(14, 'jumanji', 'jumanji.jpeg', 4, 'hi', 2);
 
 --
 -- Indexes for dumped tables
@@ -235,7 +236,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `works`
 --
 ALTER TABLE `works`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

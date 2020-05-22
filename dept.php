@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/site.css">
 </head>
-
 <body>
 	<div id="wrapper">
 		<div class="allDept">
@@ -19,10 +18,35 @@
 					<a href="https://www.vanarts.com/" target="_blank"><img src="imgs/logo.png" alt="VanArts Logo" style="width: 15%;"></a><!--Using jpg img for now (need png graphics from Ashwin/Steph)-->
 				</div><!----logo end---->
 
-				<div class="menu">
-					<!--Hamburger Menu-->
-				</div><!----menu end---->
-			</div><!----mainNav end---->
+				<nav>
+          <ul class="main1">
+              <li>
+                  <a href="#" data-page="home" data-url="" data-position=".home" class="hEffect">2D/3D Character Animation</a>
+              </li>
+              <li>
+                  <a href="#" data-page="cat" data-url="" data-position=".categories" class="hEffect">Acting for Film&Television</a>
+              </li>
+              <li>
+                  <a href="#" data-page="height" data-url="" data-position=".heights" class="hEffect">Broadcasting & Online Media</a>
+              </li>
+              <li>
+                  <a href="#" data-page="ascdesc" data-url="" data-position=".ascdesc" class="hEffect">Game Art & Design</a>
+              </li>
+              <li>
+                  <a href="#" data-page="spacing" data-url="" data-position=".spacing" class="hEffect">Professional Photography</a>
+              </li>
+              <li>
+                  <a href="" class="hEffect">Visual Effects for Film & TV</a>
+              </li>
+              <li>
+                <a href="" class="hEffect">Web Development & Interactive Design</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
 
 			<div class="heading1">
 				<h1>All Student’s Works</h1><br>
@@ -30,18 +54,19 @@
 
 			<div class="departments">
 				<div class="arrowLeft">
-					<a href="index.html"><i class="fas fa-chevron-circle-left fa-2x"></i></i></a>
+					<a href="#" id="prevPage"><i class="fas fa-chevron-circle-left fa-2x"></i></i></a>
 				</div>
 
 				<div class="arrowRight">
-					<a href="2d3d.html"><i class="fas fa-chevron-circle-right fa-2x"></i></i></a>
+					<a href="#" id="nextPage"><i class="fas fa-chevron-circle-right fa-2x"></i></i></a>
 				</div>
 
-				<div class="deptImages">		
+				<div class="deptImages">	
+
 				</div>
 			</div>
 
-			<a href="index.html"><button type="button" class="btn btn-secondary"><i class="fas fa-chevron-left"></i> &nbsp; Home</button></a>
+			<a href="index.php"><button type="button" class="btn btn-secondary"><i class="fas fa-chevron-left"></i> &nbsp; Home</button></a>
 		</div>
 
 
@@ -57,5 +82,6 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="libs/functions.js" type="text/javascript"></script>
+<script src="libs/ham.js"></script>
 </body>
 </html>

@@ -19,24 +19,49 @@
 					<a href="https://www.vanarts.com/" target="_blank"><img src="imgs/logo.png" alt="VanArts Logo" style="width: 15%;"></a><!--Using jpg img for now (need png graphics from Ashwin/Steph)-->
 				</div><!----logo end---->
 
-				<div class="menu">
-					<!--Hamburger Menu-->
-				</div><!----menu end---->
-			</div><!----mainNav end---->
+				<nav>
+          <ul class="main1">
+              <li>
+                  <a href="#" data-page="home" data-url="" data-position=".home" class="hEffect">2D/3D Character Animation</a>
+              </li>
+              <li>
+                  <a href="#" data-page="cat" data-url="" data-position=".categories" class="hEffect">Acting for Film&Television</a>
+              </li>
+              <li>
+                  <a href="#" data-page="height" data-url="" data-position=".heights" class="hEffect">Broadcasting & Online Media</a>
+              </li>
+              <li>
+                  <a href="#" data-page="ascdesc" data-url="" data-position=".ascdesc" class="hEffect">Game Art & Design</a>
+              </li>
+              <li>
+                  <a href="#" data-page="spacing" data-url="" data-position=".spacing" class="hEffect">Professional Photography</a>
+              </li>
+              <li>
+                  <a href="" class="hEffect">Visual Effects for Film & TV</a>
+              </li>
+              <li>
+                <a href="" class="hEffect">Web Development & Interactive Design</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
 
 			<div class="ani">
 				<div class="animation">
-					<h1>2d/3d character animation</h1><br>
-					<p>For 25 years VanArts has been a top tier animation school, most recently ranked #2 in Canada by Animation Career Review for its' 2020 rankings. Learn how to animate believable character performances with Maya for 3D or Harmony and hand drawn classical animation for the 2D program.</p>
+					<h1>Acting for film & television</h1><br>
+					<p>Study directly with some of the best professionals in the industry, for 30 hours of class per week. Our students receive the most intensive practical training in Acting for Film, Television and Voiceover in the country.</p>
 				</div>
 
 				<div class="animationDept">
 					<div class="animationArrowLeft">
-						<a href="dept.html"><i class="fas fa-chevron-circle-left fa-3x"></i></i></a>
+						<a href="2d3d.html"><i class="fas fa-chevron-circle-left fa-3x"></i></i></a>
 					</div>
 
 					<div class="animationArrowRight">
-						<a href="acting.html"><i class="fas fa-chevron-circle-right fa-3x"></i></i></a>
+						<a href="game.html"><i class="fas fa-chevron-circle-right fa-3x"></i></i></a>
 					</div>
 
 					<div class="animationDeptImages">		
@@ -61,5 +86,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="libs/functions.js" type="text/javascript"></script>
+<script src="libs/ham.js"></script>
 </body>
 </html>
