@@ -444,7 +444,7 @@ nav ul.main1 li a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	display:none;
+	/* display:none; */
 	overflow: none;
   }
 	  

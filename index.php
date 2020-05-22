@@ -69,44 +69,8 @@
 				</div>	
 			</div>
 		</div>
-
-		<div class="bgModal" id="modal1">
-          <div class="modal-content">
-          	<img src="imgs/closebutton.png" alt="delete button" class="close" id="closeModal">
-          	<div class="spaceContent">   
-	            <img src="imgs/poster1.jpg" id="modalImage"/>
-	            <h2>Blade Runner</h2>
-	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus porro officia hic fugit nihil, rem dolorum inventore nulla, dignissimos aut. Beatae omnis asperiores incidunt, reprehenderit suscipit eligendi? Voluptas, facilis, eveniet.Beatae omnis asperiores incidunt, reprehenderit suscipit eligendi?</p>
-	         </div>
-          </div>
-        </div>
-        <div class="bgModal" id="modal2">
-          <div class="modal-content">
-          	<img src="imgs/closebutton.png" alt="delete button" class="close" id="closeModal">
-          	<div class="spaceContent"> 
-	            <img src="imgs/poster2.jpg" id="modalImage"/>
-	            <h2>Blade Runner</h2>
-	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus porro officia hic fugit nihil, rem dolorum inventore nulla, dignissimos aut. Beatae omnis asperiores incidunt, reprehenderit suscipit eligendi? Voluptas, facilis, eveniet.Beatae omnis asperiores incidunt, reprehenderit suscipit eligendi?</p>
-	        </div>
-          </div>
-        </div>
-         <div class="bgModal" id="modal3">
-          <div class="modal-content">
-            <img src="imgs/closebutton.png" alt="delete button" class="close" id="closeModal">
-          	<div class="spaceContent"> 
-            <img src="imgs/poster3.jpg" id="modalImage"/>
-            <h2>Blade Runner</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus porro officia hic fugit nihil, rem dolorum inventore nulla, dignissimos aut. Beatae omnis asperiores incidunt, reprehenderit suscipit eligendi? Voluptas, facilis, eveniet.Beatae omnis asperiores incidunt, reprehenderit suscipit eligendi?</p>
-          </div>
-        </div>
-        <div class="bgModal" id="modal4">
-          <div class="modal-content">
-            <img src="imgs/closebutton.png" alt="delete button" class="close" id="closeModal">
-            <img src="imgs/poster4.jpg" id="modalImage"/>
-            <h2>Blade Runner</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus porro officia hic fugit nihil, rem dolorum inventore nulla, dignissimos aut. Beatae omnis asperiores incidunt, reprehenderit suscipit eligendi? Voluptas, facilis, eveniet.Beatae omnis asperiores incidunt, reprehenderit suscipit eligendi?</p>
-          </div>
-        </div>
+    <div class="addByBackend"></div><!-- for place the model box -->
+		
 		<div class="foot">
 		</div>
 
