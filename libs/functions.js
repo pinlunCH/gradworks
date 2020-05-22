@@ -8,6 +8,14 @@ $(function(){
     pageNum--;
     getData("backend/index.php?controller=works&route=pager&pageon="+pageNum,outputAll);
   })
+  $('#nextPageDept').on('click', function(){
+    pageNum++;
+    getData("backend/index.php?controller=works&route=pagerForFour&pageon="+pageNum,outputDept);
+  })
+  $('#prevPageDept').on('click', function(){
+    pageNum--;
+    getData("backend/index.php?controller=works&route=pagerForFour&pageon="+pageNum,outputDept);
+  })
   function getData(url, fnProcess)
   {
     // this $.ajax is a jquery function, that opens a connection to a server, and makes a request... and gives back to the success function, the response from the server...
@@ -23,6 +31,7 @@ $(function(){
       }
     })
   }
+
 
   function processFeatured(data) // getting latest data inserted
   {
@@ -44,7 +53,21 @@ $(function(){
     data.forEach(function(record){
       html += '<img class="addbybackend" src="imgs/'+record.strCoverImage+'" alt="'+record.strName+'"href="#modal'+record.id+'"">';
     });
-    $(".deptImages").html(html);  
+    $(".deptImages").html(html); 
+
+
+    $(".addbybackend").on("click", function(){
+    var whichID = $(this).data("id");
+    getData("backend/index.php?controller=works&route=findById&id="+whichID,showModal);
+    })
+  }
+
+  function outputDept(data) { 
+    var html ="";
+    data.forEach(function(record){
+      html += '<img class="addbybackend" style="width:16%" src="imgs/'+record.strCoverImage+'" alt="'+record.strName+'"href="#modal'+record.id+'"">';
+    });
+    $(".animationDeptImages").html(html); 
 
 
     $(".addbybackend").on("click", function(){
@@ -91,6 +114,14 @@ $(function(){
     }
   }
 
+  function outputDeptName(data) { 
+    var html ="";
+    data.forEach(function(record){
+      html += '<li><a href="'+record.strShort+'.php" data-page="" data-url="" data-position="" class="hEffect">'+record.strName+'</a></li>';
+    });
+    $(".main1").html(html);
+  }
+
   // function processDepartments(data)
   // {
   //   var html ="";
@@ -111,6 +142,8 @@ $(function(){
   // }
   getData("backend/index.php?controller=works&route=getLatest",processFeatured);
   getData("backend/index.php?controller=works&route=pager&pageon=1",outputAll);
+  getData("backend/index.php?controller=works&route=pagerForFour&pageon=1",outputDept);
+  getData("backend/index.php?controller=departments&route=getAll",outputDeptName);
   // getData("../portback/index.php?controller=departments&route=getAll",processDepartments);
 
   //  getData("../portback/index.php?controller=works&route=getCover",processCover);

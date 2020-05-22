@@ -33,6 +33,7 @@ Class WorksControllers
 		}
 		include("Views/json.php");
 	}
+
 	function pager()
 	{
 		if(isset($_GET['pageon'])){
@@ -41,6 +42,22 @@ Class WorksControllers
 			$pageno = 1;
 		}			
 		$no_of_records_per_page = 6;
+		$offset = ($pageno-1) * $no_of_records_per_page;
+		$total_page = Works::count();
+		$total_rows = $total_page[0]['num'];
+		$total_pages = ceil($total_rows/$no_of_records_per_page);
+		$data = Works::page($offset,$no_of_records_per_page);
+		include("Views/json.php");
+	}
+
+	function pagerForFour()
+	{
+		if(isset($_GET['pageon'])){
+			$pageno = $_GET['pageon'];
+		} else{
+			$pageno = 1;
+		}			
+		$no_of_records_per_page = 4;
 		$offset = ($pageno-1) * $no_of_records_per_page;
 		$total_page = Works::count();
 		$total_rows = $total_page[0]['num'];
