@@ -65,11 +65,12 @@
 
 				</div>
 			</div>
-
+			
+			<div class="addByBackend"></div><!-- for place the model box -->
 			<a href="index.php"><button type="button" class="btn btn-secondary"><i class="fas fa-chevron-left"></i> &nbsp; Home</button></a>
 		</div>
 
-
+	
 
 		<div class="foot">
 			<p>	&copy; Designed by Web 17 at VanArts</p>

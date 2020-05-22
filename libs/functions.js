@@ -28,13 +28,13 @@ $(function(){
   {
     var html ="";
     data.forEach(function(record){
-      html += '<a href="#" class="trigger modalBtn"><img class="addbybackend" src="imgs/'+record.strCoverImage+'" alt="'+record.strName+'" href="#modal'+record.id+'""></a>';
+      html += '<a href="#" data-id="'+record.id+'"class="trigger modalBtn"><img class="addbybackend" src="imgs/'+record.strCoverImage+'" alt="'+record.strName+'"  href="#modal'+record.id+'""></a>';
     });
     html += '<a href="dept.php"><i class="fas fa-play"></i></a>'
     $(".post").html(html);  
 
-    $(".addbybackend").on("click", function(){
-    var whichID = $(this).data("id");
+    $(".modalBtn").on("click", function(){
+    var whichID = $(this).data('id');
     getData("backend/index.php?controller=works&route=findById&id="+whichID,showModal);
     })
   }
@@ -42,19 +42,25 @@ $(function(){
   function outputAll(data) { 
     var html ="";
     data.forEach(function(record){
-      html += '<img class="addbybackend" src="imgs/'+record.strCoverImage+'" alt="'+record.strName+'"href="#modal'+record.id+'"">';
+      html += '<a href="#" data-id="'+record.id+'"class="trigger modalBtn"><img class="addbybackend" src="imgs/'+record.strCoverImage+'" alt="'+record.strName+'"href="#modal'+record.id+'""></a>';
     });
     $(".deptImages").html(html);  
 
-
-    $(".addbybackend").on("click", function(){
-    var whichID = $(this).data("id");
+    $(".modalBtn").on("click", function(){
+      var whichID = $(this).data('id');
     getData("backend/index.php?controller=works&route=findById&id="+whichID,showModal);
     })
   }
 
-  function showModal()
+  function showModal(data)
   {
+    var html ="";
+    data.forEach(function(record){
+
+      html += '<div class="bgModal" id="modal'+record.id+'"><div class="model-content"><img src="imgs/closebutton.png" alt="delete button" class="close" id="closeModal"><div class="spaceContent"><img src="imgs/'+record.strCoverImage+'" alt="'+record.strName+'"id="modalImage"><h2>'+record.strName+'</h2><p>'+record.strDetail+'</p></div></div></div>';
+    });
+    $(".addByBackend").html(html);  
+
     var modalBtn = document.querySelectorAll("a.modalBtn");
 
     // Get all page modals
@@ -69,7 +75,7 @@ $(function(){
         console.log(e);
         e.preventDefault();
         modal = document.querySelector(e.target.getAttribute("href"));
-        console.log(modal)
+        console.log(modal);
         modal.style.display = "block";
      }
     }
@@ -81,14 +87,14 @@ $(function(){
         }
      }
     }
-    
     window.onclick = function(event) {
         if (event.target.classList.contains('modal')) {
          for (var index in modals) {
           if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
          }
         }
-    }
+    }      
+
   }
 
   // function processDepartments(data)
