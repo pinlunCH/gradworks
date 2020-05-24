@@ -43,7 +43,7 @@
 						<a href="#" id="nextPageDept"><i class="fas fa-chevron-circle-right fa-3x"></i></i></a>
 					</div>
 
-					<div class="animationDeptImages">		
+					<div class="animationDeptImages radio">		
 	
 					</div>
 				</div>

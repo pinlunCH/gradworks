@@ -62,19 +62,62 @@ $(function(){
     })
   }
 
-  function outputDept(data) { 
+  function outputDept2d3d(data) { 
     var html ="";
     data.forEach(function(record){
       html += '<img class="addbybackend" style="width:16%" src="imgs/'+record.strCoverImage+'" alt="'+record.strName+'"href="#modal'+record.id+'"">';
     });
-    $(".animationDeptImages").html(html); 
-
-
-    $(".addbybackend").on("click", function(){
-    var whichID = $(this).data("id");
-    getData("backend/index.php?controller=works&route=findById&id="+whichID,showModal);
-    })
+    $(".2d3d").html(html); 
   }
+
+  function outputDeptActing(data) { 
+    var html ="";
+    data.forEach(function(record){
+      html += '<img class="addbybackend" style="width:16%" src="imgs/'+record.strCoverImage+'" alt="'+record.strName+'"href="#modal'+record.id+'"">';
+    });
+    $(".acting").html(html); 
+  }
+
+  function outputDeptRadio(data) { 
+    var html ="";
+    data.forEach(function(record){
+      html += '<img class="addbybackend" style="width:16%" src="imgs/'+record.strCoverImage+'" alt="'+record.strName+'"href="#modal'+record.id+'"">';
+    });
+    $(".radio").html(html); 
+  }
+
+  function outputDeptGame(data) { 
+    var html ="";
+    data.forEach(function(record){
+      html += '<img class="addbybackend" style="width:16%" src="imgs/'+record.strCoverImage+'" alt="'+record.strName+'"href="#modal'+record.id+'"">';
+    });
+    $(".game").html(html); 
+  }
+
+  function outputDeptPhotography(data) { 
+    var html ="";
+    data.forEach(function(record){
+      html += '<img class="addbybackend" style="width:16%" src="imgs/'+record.strCoverImage+'" alt="'+record.strName+'"href="#modal'+record.id+'"">';
+    });
+    $(".photography").html(html); 
+  }
+
+  function outputDeptVfx(data) { 
+    var html ="";
+    data.forEach(function(record){
+      html += '<img class="addbybackend" style="width:16%" src="imgs/'+record.strCoverImage+'" alt="'+record.strName+'"href="#modal'+record.id+'"">';
+    });
+    $(".vfx").html(html); 
+  }
+
+  function outputDeptWeb(data) { 
+    var html ="";
+    data.forEach(function(record){
+      html += '<img class="addbybackend" style="width:16%" src="imgs/'+record.strCoverImage+'" alt="'+record.strName+'"href="#modal'+record.id+'"">';
+    });
+    $(".web").html(html); 
+  }
+
 
   function showModal()
   {
@@ -142,7 +185,16 @@ $(function(){
   // }
   getData("backend/index.php?controller=works&route=getLatest",processFeatured);
   getData("backend/index.php?controller=works&route=pager&pageon=1",outputAll);
-  getData("backend/index.php?controller=works&route=pagerForFour&pageon=1",outputDept);
+
+  // getData("backend/index.php?controller=works&route=pagerForFour&pageon=1",outputDept);
+  getData("backend/index.php?controller=departments&route=getDept2d3d",outputDept2d3d);
+  getData("backend/index.php?controller=departments&route=getDeptActing",outputDeptActing);
+  getData("backend/index.php?controller=departments&route=getDeptRadio",outputDeptRadio);
+  getData("backend/index.php?controller=departments&route=getDeptGame",outputDeptGame);
+  getData("backend/index.php?controller=departments&route=getDeptPhotography",outputDeptPhotography);
+  getData("backend/index.php?controller=departments&route=getDeptVfx",outputDeptVfx);
+  getData("backend/index.php?controller=departments&route=getDeptWeb",outputDeptWeb);
+
   getData("backend/index.php?controller=departments&route=getAll",outputDeptName);
   // getData("../portback/index.php?controller=departments&route=getAll",processDepartments);
 
