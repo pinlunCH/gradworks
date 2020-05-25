@@ -70,7 +70,6 @@
 			</div>
 		</div>
     <div class="addByBackend"></div><!-- for place the model box -->
-		
 		<div class="foot">
 		</div>
 
