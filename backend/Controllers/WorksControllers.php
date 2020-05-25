@@ -28,11 +28,13 @@ Class WorksControllers
 		if (isset($_GET["id"]))
 		{
 			$data = Works::findById($_GET["id"]);
+
 		} else {
 			echo "no id ";
 		}
 		include("Views/json.php");
 	}
+
 	function pager()
 	{
 		if(isset($_GET['pageon'])){
@@ -48,6 +50,8 @@ Class WorksControllers
 		$data = Works::page($offset,$no_of_records_per_page);
 		include("Views/json.php");
 	}
+
+
 
 }
 

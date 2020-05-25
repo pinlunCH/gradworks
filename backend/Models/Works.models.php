@@ -5,12 +5,13 @@ Class Works{
         $data = DB::fetch("SELECT * FROM works");
         return $data;
     }
+
     public static function getLatest()
     {
         $data = DB::fetch("SELECT * FROM works ORDER BY id DESC LIMIT 4");
-        return $data;
-        
+        return $data; 
     }
+
     public static function findById($id)
     {
         $data = DB::fetch("SELECT * FROM works WHERE id ='".$id."'");

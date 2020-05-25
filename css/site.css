@@ -4,7 +4,9 @@
 	padding: 0;
 	
 }
-
+#modalImage{
+  max-width: 400px;
+}
 body {
 	background-color: #000;
 	font-family: 'Raleway', sans-serif;
@@ -13,7 +15,7 @@ body {
 
 .main {
 	background-image: url(../imgs/header.jpg);
-	height: 450px;
+	height: 550px;
 	max-width: 100%;
 	background-repeat: no-repeat;
 	background-position: left;
@@ -136,18 +138,18 @@ hr {
 /*---------------------ALL DEPARTMENTS PAGE--------------------------*/
 
 .allDept {
-	background-image: url(../imgs/dept.png);
-	height: 100%;
-	max-width: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
+  background-image: url(../imgs/dept.png);
+  height: 100%;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .heading1 h1 {
-	padding-top: 7%;
-	text-align: center;
-	font-weight: bold;
+  padding-top: 7%;
+  text-align: center;
+  font-weight: bold;
 }
 @media only screen and (max-width: 600px) {
  .heading1 h1 {
@@ -156,9 +158,9 @@ hr {
 }
 
 .arrowLeft {
-	float: left;
-	padding-top: 25%;
-	margin-left: 5%;
+  float: left;
+  padding-top: 25%;
+  margin-left: 5%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -167,13 +169,13 @@ hr {
   }
 }
 .arrowLeft i {
-	color: #707070;
+  color: #707070;
 }
 
 .arrowRight {
-	float: right;
-	padding-top: 25%;
-	margin-right: 5%;
+  float: right;
+  padding-top: 25%;
+  margin-right: 5%;
 }
 @media only screen and (max-width: 600px) {
  .arrowRight  {
@@ -181,32 +183,36 @@ hr {
   }
 }
 
-
 .arrowRight i {
-	color: #707070;
+  color: #707070;
 }
 
 
 .departments {
-	display: inline-block;
-	text-align: center;
+  display: inline-block;
+  text-align: center;
 }
 
 .deptImages img {
-	padding: 25px;
-	width: 15%;
+  padding: 10px;
+  width: 13%;
 }
 @media only screen and (max-width: 600px) {
   .deptImages img {
-   width: 25%;
-   padding: 10px;
-
+   width: 23%;
+   padding: 1px; /* I CHANGED THE PADDING ONLY RIGHT NOW */
   }
 }
 
 .btn-secondary {
-	text-transform: uppercase;
-	margin-left: 5%;
+  text-transform: uppercase;
+  margin-left: 5%;
+}
+@media only screen and (max-width: 600px) {
+ .btn-secondary{
+   margin-left: 15%; 
+   margin-top:5px;/* I CHANGED THE PADDING ONLY RIGHT NOW */
+  }
 }
 /*---------------------2D 3D PAGE--------------------------*/
 .animation {
@@ -216,6 +222,15 @@ hr {
 	margin-left: 12%;
 	position: absolute;
 	display: inline-block;
+}
+@media only screen and (max-width: 600px) {
+  .animation  {
+ margin-right: 15%;
+float: left;
+margin-left: 12%;
+text-align: center; 
+margin-top: 5%;
+  }
 }
 
 .animation p {
@@ -228,12 +243,29 @@ hr {
 	font-weight: bold;
 	text-transform: uppercase;
 }
-
+@media only screen and (max-width: 600px) {
+  .animation h1 {
+ margin-top: 10%;
+margin-right: 20%;
+float: left;
+margin-left: 12%;
+font-size: 30px;
+ 
+  }
+}
 .animationDept {
 	text-align: right;
 	margin-right: 8%;
 	padding-top: 5%;
 }
+@media only screen and (max-width: 600px) {
+ .animationDept {
+  text-align: center;
+  padding-top: 90%;
+  margin-left: 9%;
+  }
+}
+
 
 .animationDept i {
 	color: #707070;
@@ -242,6 +274,13 @@ hr {
 .animationDept img {
 	margin: 5px;
 }
+@media only screen and (max-width: 600px) {
+  .animation img {
+
+ 
+  }
+}
+
 
 .animationArrowLeft {
 	padding-top: 25%;
@@ -265,6 +304,13 @@ hr {
 .animationDeptImages img {
 	margin-right: 3%;
 }
+@media only screen and (max-width: 600px) {
+.animationDeptImages img {
+width: 35%;
+
+  }
+}
+
 
 /*---------------------FOOTER--------------------------*/
 .foot {
@@ -362,6 +408,13 @@ nav {
   transform: translateX(100%);
   transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
+@media only screen and (max-width: 600px) {
+  nav {
+  
+width: 100%;
+  }
+}
+
 
 nav.show {
   transform: translateX(0px);
@@ -480,7 +533,8 @@ nav ul.main1 li a {
   }
   .spaceContent{
 	  width:50%;
-	  margin: 0 auto;
+    margin: 0 auto;
+    text-align: center;
 	  padding: 20px;
   }
   .spaceContent h2, .spaceContent p{
